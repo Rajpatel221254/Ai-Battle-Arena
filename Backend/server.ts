@@ -11,7 +11,7 @@ const startServer = async () => {
     await connectDB();
 
     // Start Express server
-    app.listen(config.PORT, () => {
+    app.listen(Number(config.PORT), "0.0.0.0", () => {
       console.log(`\n🚀 AI Battle Arena Server running on port ${config.PORT}`);
       console.log(`📡 Health check: http://localhost:${config.PORT}/api/health`);
       console.log(`🔐 Auth API:     http://localhost:${config.PORT}/api/auth`);
