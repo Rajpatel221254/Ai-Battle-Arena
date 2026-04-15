@@ -9,7 +9,7 @@ const app = express();
 // ── Global Middleware ───────────────────────────────────────────────
 app.use(cors(
   {
-    origin: "http://localhost:5173",
+    origin: "https://ai-battle-arena-mbrc.vercel.app/",
     credentials: true,
   }
 ));
